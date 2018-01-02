@@ -34,7 +34,7 @@ public void user_opens_the_browser() throws Throwable {
 public void he_gets_the_url() throws Throwable {
 	
 	driver.navigate().to("http://www.way2automation.com/demo.html");
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     
 }
 
