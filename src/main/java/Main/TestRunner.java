@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features="Feature/Cucumber.feature", glue= "StepDef")
+@CucumberOptions(features="Feature/Cucumber.feature", glue= "StepDeff")
 
 public class TestRunner {
 
