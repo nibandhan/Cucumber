@@ -1,6 +1,7 @@
 package StepDef;
 
 import java.io.File;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -12,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -34,7 +36,7 @@ public void user_opens_the_browser() throws Throwable {
 public void he_gets_the_url() throws Throwable {
 	
 	driver.navigate().to("http://www.way2automation.com/demo.html");
-	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
     
 }
 
@@ -68,6 +70,7 @@ public void validate_the_title_of_the_home_page() throws Throwable {
 	driver.findElement(By.name("password")).sendKeys("Nibbu@0518*");
 	
 	driver.findElement(By.className("button")).click();
+
 	
 	
 	
